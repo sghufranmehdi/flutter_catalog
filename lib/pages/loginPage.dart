@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/utils/routes.dart';
 
@@ -61,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding:
-                  const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                   child: Column(
                     children: [
                       TextFormField(
@@ -101,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                       Material(
                         color: Colors.deepPurple,
                         borderRadius:
-                        BorderRadius.circular(changeButton ? 50 : 8),
+                            BorderRadius.circular(changeButton ? 50 : 8),
                         child: InkWell(
                           onTap: () => moveToHome(context),
                           child: AnimatedContainer(
@@ -111,17 +109,17 @@ class _LoginPageState extends State<LoginPage> {
                             alignment: Alignment.center,
                             child: changeButton
                                 ? Icon(
-                              Icons.done,
-                              color: Colors.white,
-                            )
+                                    Icons.done,
+                                    color: Colors.white,
+                                  )
                                 : Text(
-                              "Login",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                              ),
-                            ),
+                                    "Login",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
 
                             // shape: changeButton
                             //     ? BoxShape.circle
